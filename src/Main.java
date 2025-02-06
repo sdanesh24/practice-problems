@@ -8,6 +8,7 @@ public class Main
         LargestNumberUtilities largestNumberUtilities = new LargestNumberUtilities();
         SmallestNumberUtilities smallestNumberUtilities = new SmallestNumberUtilities();
 
+        // THIS IS A GIT TEST
         // Create a variable to store an integer
         // Confused about variable access between methods...
         // is it the same largest variable in main and LargestNumberUtilities or two different ones? use a getter here?
