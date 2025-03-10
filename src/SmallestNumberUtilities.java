@@ -3,24 +3,24 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SmallestNumberUtilities {
-    public int getSmallestNumber(int [] inputs){
+    public static int getSmallestNumber(int [] inputs){
         int smallest = Math.min(inputs[0], Math.min(inputs[1], inputs[2]));
         System.out.println("The smallest number is: " + smallest);
         return smallest;
     }
 
     //can different methods have the same name if they're in different classes?
-    public void multiplyNumberBy3(int smallest){
+    public static void multiplyNumberBy3(int smallest){
         int smallestTripled = smallest * 3;
         System.out.println(smallestTripled);
     }
 
-    public void divideNumberBy3(int smallest){
+    public static void divideNumberBy3(int smallest){
         int smallestThird = smallest / 3;
         System.out.println(smallestThird);
     }
 
-    public void isSmallestPrime(int smallest){
+    public static void isSmallestPrime(int smallest){
         List<Integer> division_Results = new ArrayList<>();
 
         for(int i = 1; i <= smallest; i++)
@@ -43,7 +43,7 @@ public class SmallestNumberUtilities {
         }
     }
 
-    public void numberPlusAge(int smallest){
+    public static void numberPlusAge(int smallest){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
